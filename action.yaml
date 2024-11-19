@@ -1,0 +1,11 @@
+name: Semantic Versioning
+description: Creates deterministic versions using git
+
+runs:
+  - name: Checkout
+  - uses: actions/checkout@v2
+    with:
+      fetch-depth: 0 # avoid shallow clone so nbgv can do its work.
+              
+  - name: Nerdbank.GitVersioning
+    uses: dotnet/nbgv@v0.4.2
