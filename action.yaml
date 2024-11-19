@@ -1,6 +1,6 @@
 name: Semantic Versioning
 description: Creates deterministic versions using git
-
+runs-on: ubuntu-latest
 runs:
   - name: Checkout
   - uses: actions/checkout@v2
